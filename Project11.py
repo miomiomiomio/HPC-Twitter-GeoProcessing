@@ -8,8 +8,6 @@ comm_rank = comm.Get_rank()
 comm_size = comm.Get_size()
 twitter_f_path = "smallTwitter.json"
 grid_f_path = "/melbGrid.json"
-#twitter_f_path = "bigTwitter.json"
-#grid_f_path = "melbGrid.json"
 
 comm.Barrier()
 
