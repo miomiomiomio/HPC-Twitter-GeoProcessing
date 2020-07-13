@@ -18,7 +18,8 @@ if comm_rank == 0:
     f.close()
 else:
     features_list = None
-local_feature = comm.bcast(features_list, root=0)      # broadcast the grid info
+# broadcast the grid info
+local_feature = comm.bcast(features_list, root=0)
 
 # find margin
 marginX = []
